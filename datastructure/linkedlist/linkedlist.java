@@ -73,6 +73,11 @@ public class linkedlist{
             }
             temp = temp.next;
         }
+        //alternative solution:
+        // Node temp = head;
+        // for ( int i = 1; i < index; i++) temp = temp.next;
+
+        // Node node = new Node(value, temp.next);
     }
 
 
