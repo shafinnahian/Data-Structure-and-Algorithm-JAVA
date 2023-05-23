@@ -25,6 +25,25 @@ public class linkedlist{
             this.next = next;
         }
     }
+
+    public void insertFirst(int value){
+        Node node= new Node(value);
+        node.next= head;
+        head = node;
+
+        if(tail == null) tail = head;
+        size++;
+
+    }
+
+    public void display(){
+        Node temp = head;
+
+        while( temp != null){
+            System.out.print(temp.val + "->");
+            temp = temp.next;
+        }
+    }
     public static void main(String args[]){
 
     }
