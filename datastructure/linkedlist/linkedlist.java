@@ -5,7 +5,7 @@ public class linkedlist{
     private Node head;
     private Node tail;
 
-    private int size;
+    public int size;
 
     public linkedlist(){
         this.size = 0;
@@ -49,6 +49,31 @@ public class linkedlist{
         size++;
     }
 
+    public void insert(int value, int index){
+        if (index == 0){
+            insertFirst(value);
+            return;
+        }
+        if (index == size){
+            insertLast(value);
+            return;
+        }
+
+        Node temp = new Node (value);
+        Node node = new Node (value);
+
+        temp = head;
+
+        for(int i = 1; i <= index; i++){
+            if(i == index){
+                node.next = temp.next;
+                temp.next= node;
+                size++;
+                return;
+            }
+            temp = temp.next;
+        }
+    }
 
 
     public void display(){

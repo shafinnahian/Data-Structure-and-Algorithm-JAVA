@@ -15,6 +15,9 @@ public class main {
         list.insertLast(90);
 
         list.display();
+
+        list.insert(24,3 );
+        list.display();
     }
     
 }
