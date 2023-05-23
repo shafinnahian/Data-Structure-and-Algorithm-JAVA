@@ -36,13 +36,29 @@ public class linkedlist{
 
     }
 
+    public void insertLast(int value){
+        if (tail == null){
+            insertFirst(value);
+            return;
+        } 
+
+        Node node = new Node(value);
+
+        tail.next = node;
+        tail = node;
+        size++;
+    }
+
+
+
     public void display(){
         Node temp = head;
 
         while( temp != null){
-            System.out.print(temp.val + "->");
+            System.out.print(temp.val + "-> ");
             temp = temp.next;
         }
+        System.out.println("End.");
     }
     public static void main(String args[]){
 
