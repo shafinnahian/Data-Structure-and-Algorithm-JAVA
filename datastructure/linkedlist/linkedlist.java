@@ -80,6 +80,40 @@ public class linkedlist{
         // Node node = new Node(value, temp.next);
     }
 
+    public Node get(int index){
+        Node node = head;
+        for (int i = 0; i < index; i++) node = node.next;
+
+        return node;
+    }
+
+    public void deleteFirst(){
+        head = head.next;
+
+        if(head == tail) tail = null;
+
+        size--;
+    }
+
+    public void deleteLast(){
+        Node temp = head;
+        
+        for (int i=0; i <= size; i++){
+            if(i==size-2){
+                temp.next=null;
+                tail=temp;
+                size--;
+                return;
+            }
+            temp = temp.next;
+        }
+        
+        // alternative solution
+        // Node secondLast = get(size-2);
+        // tail = secondLast;
+        // tail.next = null;
+        
+    }
 
     public void display(){
         Node temp = head;
