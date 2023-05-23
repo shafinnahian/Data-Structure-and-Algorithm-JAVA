@@ -22,6 +22,10 @@ public class main {
 
         list.deleteLast();
         list.display();
+
+        System.out.println("The size of the list is: "+list.size);
+        list.delete(3);
+        list.display();
     }
     
 }

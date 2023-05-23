@@ -82,9 +82,19 @@ public class linkedlist{
 
     public Node get(int index){
         Node node = head;
-        for (int i = 0; i < index; i++) node = node.next;
+        for (int i = 1; i < index; i++) node = node.next;
 
         return node;
+    }
+
+    public Node findNode(int value){
+        Node node = head;
+
+        while(node != null){
+            if (node.val == value) return node;
+            node=node.next;
+        }
+        return null;
     }
 
     public void deleteFirst(){
@@ -112,7 +122,21 @@ public class linkedlist{
         // Node secondLast = get(size-2);
         // tail = secondLast;
         // tail.next = null;
-        
+
+    }
+
+    public void delete(int index){
+        if (index == 0){
+            deleteFirst();
+            return;
+        }
+        if (index == size){
+            deleteLast();
+            return;
+        }
+
+        Node prev = get(index - 1);
+        prev.next = prev.next.next;
     }
 
     public void display(){
