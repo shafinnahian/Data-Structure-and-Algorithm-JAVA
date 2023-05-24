@@ -25,4 +25,14 @@ public class doublyLL {
             this.prev = prev;
         }
     }
+
+    public void addFirst(int value){
+        Node node = new Node(value);
+        node.next = head;
+        node.prev = null;
+
+        if (head != null) head.prev = node;
+        
+        head = node;
+    }
 }
