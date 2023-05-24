@@ -40,8 +40,19 @@ public class doublyLL {
     }
 
     public void addLast(int value){
-        Node temp = head;
         Node node = new Node(value);
+        node.next = null;
+
+        if (head == null){
+            // Node temp = new Node (value);
+            node.prev = null;
+            head = node;
+
+            size++; 
+
+            return;
+        }
+        Node temp = head;
 
         while(temp.next != null) temp = temp.next;
 
@@ -51,8 +62,30 @@ public class doublyLL {
         size++;
     }
 
+    public void add(int value, int idx){
+        Node temp = head;
+        Node node = new Node (value);
+
+        for(int i = 1; i <= size; i++){
+            if( i == idx-1){
+                node.prev = temp;
+                node.next = temp.next;
+                temp.next = node;
+            }
+            // if( i == idx){
+            //     node.next = temp;
+            //     temp.prev = node;
+
+            //     break;
+            // }
+            temp = temp.next;
+        }
+        size++;
+    }
+
     public void display(){
         Node temp = head;
+
         while (temp != null){
             System.out.print(temp.val + " -> ");
             temp = temp.next;
@@ -62,6 +95,7 @@ public class doublyLL {
 
     public void displayRev(){
         Node temp = head;
+
         while (temp.next != null) temp = temp.next;
         while (temp != null){
             System.out.print(temp.val + " -> ");
