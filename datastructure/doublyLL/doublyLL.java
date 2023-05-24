@@ -32,7 +32,29 @@ public class doublyLL {
         node.prev = null;
 
         if (head != null) head.prev = node;
-        
+
         head = node;
+        if (tail == null) tail = head;
+
+        this.size++;
+    }
+
+    public void display(){
+        Node temp = head;
+        while (temp != null){
+            System.out.print(temp.val + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("End.");
+    }
+
+    public void displayRev(){
+        Node temp = head;
+        while (temp.next != null) temp = temp.next;
+        while (temp != null){
+            System.out.print(temp.val + " -> ");
+            temp = temp.prev;
+        }
+        System.out.println("Start");
     }
 }
