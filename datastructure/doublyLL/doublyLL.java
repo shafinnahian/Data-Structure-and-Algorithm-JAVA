@@ -34,9 +34,21 @@ public class doublyLL {
         if (head != null) head.prev = node;
 
         head = node;
-        if (tail == null) tail = head;
+        // if (tail == null) tail = head;
 
         this.size++;
+    }
+
+    public void addLast(int value){
+        Node temp = head;
+        Node node = new Node(value);
+
+        while(temp.next != null) temp = temp.next;
+
+        temp.next = node;
+        node.prev = temp;
+
+        size++;
     }
 
     public void display(){

@@ -34,6 +34,7 @@ public class main {
         list.addFirst(3);
         list.addFirst(8);
         list.addFirst(17);
+        list.addLast(6);
         list.display();
         list.displayRev();
     }
