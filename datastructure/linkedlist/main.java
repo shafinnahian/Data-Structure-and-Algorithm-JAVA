@@ -39,6 +39,11 @@ public class main {
         // list.displayRev();
         list.add(18, 4);
         list.display();
+        list.displayRev();
+
+        list.insert(18, 20);
+        list.display();
+        list.displayRev();
     }
     
 }

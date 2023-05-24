@@ -71,6 +71,10 @@ public class doublyLL {
                 node.prev = temp;
                 node.next = temp.next;
                 temp.next = node;
+
+                if(node.next != null) node.next.prev = node;
+                
+                break;
             }
             // if( i == idx){
             //     node.next = temp;
@@ -80,6 +84,33 @@ public class doublyLL {
             // }
             temp = temp.next;
         }
+        size++;
+    }
+
+    public Node find(int value){
+        Node node = head;
+
+        while (node != null){
+            if(node.val == value) return node;
+            node = node.next;
+        }
+        return null;
+    }
+
+    public void insert(int findVal, int value){
+        Node temp = find(findVal);
+
+        if (temp == null){
+            System.out.println("Doesn't exist");
+            return;
+        }
+
+        Node node = new Node (value);
+        node.prev = temp;
+        node.next = temp.next;
+        temp.next.prev = node;
+        temp.next = node;
+
         size++;
     }
 
