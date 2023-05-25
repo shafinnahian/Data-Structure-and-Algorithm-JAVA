@@ -34,4 +34,16 @@ public class circularLL {
         node.next = head;
         tail = node;
     }
+
+    public void display(){
+        Node node = head;
+
+        if ( head != null){
+            do{
+                System.out.print(node.val + " -> ");
+                node = node.next;
+            } while (node != head)
+        }
+        System.out.println("END.")
+    }
 }
