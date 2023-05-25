@@ -13,7 +13,6 @@ public class circularLL {
         int val;
 
         Node next;
-        Node prev;
 
         public Node(int value){
             this.val = value;
@@ -38,7 +37,7 @@ public class circularLL {
     public Node find(int value){
         Node node = head;
 
-        while( node != null){
+        while( node.next != head ){
             if(node.val == value){
                 return node;
             }
@@ -63,6 +62,7 @@ public class circularLL {
         while (temp.next != head){
             if (temp.next == nodeDel){
                 temp.next = nodeDel.next;
+                return;
             }
             temp = temp.next;
         }

@@ -55,7 +55,7 @@ public class main {
 
         list.display();
 
-        list.delete(8);
+        list.delete(19); // check for head, tail or any element - even values that does not exist
         list.display();
     }
     
