@@ -97,6 +97,25 @@ public class linkedlist{
         return null;
     }
 
+    public void insertRec(int val, int idx){
+        head = insertRec(val, idx, head); //ensures the recursion beginning and ending at head
+    }
+
+    private Node insertRec(int val, int idx, Node node){
+        if (idx == 0 ){
+            Node temp = new Node (val, node); //if condition is met temp will connect to next node
+                                            // for 3 -> 5 -> 9 -> (7) -> 1 with idx = 0, it will connect (7) -> 1.
+            size++;
+
+            return temp; //returns the newly connected node to be connected with the previous node 9 -> 7
+        }
+
+        node.next = insertRec(val, --idx, node.next); //each iteration idx deducts till reaching 0. It then meets the above condition
+        return node; //returns the current node after each recursive function is completed. 
+                    //for third iteration in 3 -> 5 -> 9 -> (7) -> 1 it will return 9 after connecting to new node (7).
+                    // for second iteration's completion, it will return 5 after being called to connect with 9 again. This will continue till it meets head (previous method, right above)
+    }
+
     public void deleteFirst(){
         head = head.next;
 
