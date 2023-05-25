@@ -42,8 +42,8 @@ public class circularLL {
             do{
                 System.out.print(node.val + " -> ");
                 node = node.next;
-            } while (node != head)
+            } while (node != head);
         }
-        System.out.println("END.")
+        System.out.println("END.");
     }
 }
