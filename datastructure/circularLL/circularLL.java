@@ -35,6 +35,39 @@ public class circularLL {
         tail = node;
     }
 
+    public Node find(int value){
+        Node node = head;
+
+        while( node != null){
+            if(node.val == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
+    public void delete(int value){
+        Node nodeDel = find(value);
+
+        if(nodeDel == null) return;
+        else if (nodeDel == head){
+            tail.next = head.next;
+            head = head.next;
+
+            return;
+        }
+
+        Node temp = head;
+
+        while (temp.next != head){
+            if (temp.next == nodeDel){
+                temp.next = nodeDel.next;
+            }
+            temp = temp.next;
+        }
+    }
+
     public void display(){
         Node node = head;
 
@@ -44,6 +77,6 @@ public class circularLL {
                 node = node.next;
             } while (node != head);
         }
-        System.out.println("END.");
+        System.out.println("Head");
     }
 }

@@ -1,5 +1,6 @@
 package datastructure.linkedlist;
 
+import datastructure.circularLL.circularLL;
 import datastructure.doublyLL.doublyLL;
 
 public class main {
@@ -28,22 +29,34 @@ public class main {
         // list.delete(3);
         // list.display();
 
-        doublyLL list = new doublyLL();
-        list.addFirst(5);
-        list.addFirst(2);
-        list.addFirst(3);
-        list.addFirst(8);
-        list.addFirst(17);
-        list.addLast(6);
-        list.display();
+        // doublyLL list = new doublyLL();
+        // list.addFirst(5);
+        // list.addFirst(2);
+        // list.addFirst(3);
+        // list.addFirst(8);
+        // list.addFirst(17);
+        // list.addLast(6);
+        // list.display();
+        // // list.displayRev();
+        // list.add(18, 4);
+        // list.display();
         // list.displayRev();
-        list.add(18, 4);
-        list.display();
-        list.displayRev();
 
-        list.insert(18, 20);
+        // list.insert(18, 20);
+        // list.display();
+        // list.displayRev();
+
+        circularLL list = new circularLL();
+        list.add(8);
+        list.add(9);
+        list.add(2);
+        list.add(7);
+        list.add(17);
+
         list.display();
-        list.displayRev();
+
+        list.delete(8);
+        list.display();
     }
     
 }
