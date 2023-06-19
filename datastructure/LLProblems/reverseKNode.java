@@ -2,6 +2,7 @@ package datastructure.LLProblems;
 
 // Leetcode 25
 // https://leetcode.com/problems/reverse-nodes-in-k-group/
+//https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/3573306/simple-iterative-java-solve-explained-step-by-step/
 
 public class reverseKNode {
      public ListNode reverseKGroup(ListNode head, int k){
