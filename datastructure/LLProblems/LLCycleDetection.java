@@ -1,5 +1,6 @@
 package datastructure.LLProblems;
-
+//https://leetcode.com/problems/linked-list-cycle/description/
+//https://leetcode.com/problems/linked-list-cycle/solutions/3654362/runtime-0ms-beat-100-java-easy-explanation/
 
 public class LLCycleDetection {
 
