@@ -1,5 +1,8 @@
 package datastructure.LLProblems;
 
+//https://leetcode.com/problems/reverse-linked-list/description/
+//https://leetcode.com/problems/reverse-linked-list/solutions/3569892/beat-100-runtime-9276-memory-java-explained-step-by-step/
+
 public class reverseLL {
     Node head;
 
