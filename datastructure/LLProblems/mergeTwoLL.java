@@ -4,6 +4,7 @@ public class mergeTwoLL {
     
 }
 //https://leetcode.com/problems/merge-two-sorted-lists/
+//https://leetcode.com/problems/merge-two-sorted-lists/solutions/3562559/0ms-beating-100-runtime-415mb-beating-981-memory-java-solution/
 
 
 //   Definition for singly-linked list.
