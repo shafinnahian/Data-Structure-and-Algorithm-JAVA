@@ -2,6 +2,7 @@ package datastructure.LLProblems;
 
 //leetcode 143. 
 //https://leetcode.com/problems/reorder-list/description/
+// https://leetcode.com/problems/reorder-list/solutions/3573200/java-beat-100-runtime-explained-easy-step-by-step/
 
 public class reorderList {
     public ListNode findMid(ListNode head){
