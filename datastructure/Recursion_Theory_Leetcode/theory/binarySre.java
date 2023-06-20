@@ -1,13 +1,13 @@
-package datastructure.Recursion_Theory_Leetcode.theory;
+package Recursion_Theory_Leetcode.theory;
 
 public class binarySre{
     public static void main(String[] args) {
-    int [] arr= {1, 2, 3, 4, 55, 66, 78};
-    int target = 66;
-    System.out.println(search(arr, target, 0, arr.length - 1));
+        int [] arr= {1, 2, 3, 4, 55, 66, 78};
+        int target = 66;
+        System.out.println(search(arr, target, 0, arr.length - 1));
 
-    // int temp = search(arr, target, 0, arr.length - 1);
-    // System.out.println(temp);
+        // int temp = search(arr, target, 0, arr.length - 1);
+        // System.out.println(temp);
     }
 
     static int search(int arr[], int target, int s, int e){
