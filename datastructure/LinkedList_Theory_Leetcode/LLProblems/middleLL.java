@@ -1,4 +1,4 @@
-package datastructure.LLProblems;
+package LinkedList_Theory_Leetcode.LLProblems;
 
 
 public class middleLL {

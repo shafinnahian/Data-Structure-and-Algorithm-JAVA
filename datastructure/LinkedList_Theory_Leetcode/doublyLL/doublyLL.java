@@ -1,4 +1,4 @@
-package datastructure.doublyLL;
+package LinkedList_Theory_Leetcode.doublyLL;
 
 public class doublyLL {
 

@@ -1,4 +1,4 @@
-package datastructure.LLProblems;
+package LinkedList_Theory_Leetcode.LLProblems;
 //https://leetcode.com/problems/palindrome-linked-list/
 //https://leetcode.com/problems/palindrome-linked-list/solutions/3570164/java-easy-explanation-step-by-step/
 

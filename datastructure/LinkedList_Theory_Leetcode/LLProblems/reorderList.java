@@ -1,4 +1,4 @@
-package datastructure.LLProblems;
+package LinkedList_Theory_Leetcode.LLProblems;
 
 //leetcode 143. 
 //https://leetcode.com/problems/reorder-list/description/

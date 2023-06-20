@@ -1,4 +1,4 @@
-package datastructure.LLProblems;
+package LinkedList_Theory_Leetcode.LLProblems;
 //https://leetcode.com/problems/linked-list-cycle-ii/description/
 //https://leetcode.com/problems/linked-list-cycle-ii/solutions/3569642/1ms-runtime-beats-100-java-solution-explained/
 

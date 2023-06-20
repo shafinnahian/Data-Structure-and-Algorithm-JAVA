@@ -1,4 +1,4 @@
-package datastructure.circularLL;
+package LinkedList_Theory_Leetcode.circularLL;
 
 public class circularLL {  
     Node head;  

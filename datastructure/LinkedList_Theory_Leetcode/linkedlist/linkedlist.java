@@ -1,4 +1,4 @@
-package datastructure.linkedlist;
+package LinkedList_Theory_Leetcode.linkedlist;
 
 public class linkedlist{
 

@@ -1,4 +1,4 @@
-package datastructure.LLProblems;
+package LinkedList_Theory_Leetcode.LLProblems;
 
 // Leetcode 25
 // https://leetcode.com/problems/reverse-nodes-in-k-group/

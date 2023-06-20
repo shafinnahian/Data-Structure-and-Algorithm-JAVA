@@ -1,4 +1,4 @@
-package datastructure.LLProblems;
+package LinkedList_Theory_Leetcode.LLProblems;
 
 //https://leetcode.com/problems/happy-number/description/
 //https://leetcode.com/problems/happy-number/solutions/3569817/java-solution-explained-easy-beat-9772-in-space-and-8992-in-time-complexity/
