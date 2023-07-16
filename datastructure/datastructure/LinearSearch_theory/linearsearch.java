@@ -1,8 +1,6 @@
-package datastructure.LinearSearch_theory-Search-Theory;
+package datastructure.LinearSearch_theory;
 
-import java.util.*;
-
-public class LSearch {
+public class linearsearch {
     public static void main(String[] args) {
         int[] arr= {1, 2, 3, 4, 5, 6};
     //     System.out.println(isTrueInt(arr, 8));
