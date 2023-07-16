@@ -1,4 +1,4 @@
-package datastructure.LinearSearch_theory;
+package LinearSearch_theory;
 
 public class linearsearch {
     public static void main(String[] args) {
