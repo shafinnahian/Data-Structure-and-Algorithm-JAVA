@@ -1,4 +1,4 @@
-package BinarySearch.Problems;
+package BinarySearch_Theory_Problems.Problems;
 
 
 //problem
