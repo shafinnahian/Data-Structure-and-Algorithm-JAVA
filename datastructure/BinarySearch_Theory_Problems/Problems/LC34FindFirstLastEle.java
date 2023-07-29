@@ -1,4 +1,4 @@
-package BinarySearch.Problems;
+package BinarySearch_Theory_Problems.Problems;
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-numsay/
 // facebook question
 
