@@ -1,4 +1,4 @@
-package Stacks_Queues_Theory_Problems.Stacks;
+package Stacks;
 
 public class StackMain {
     public static void main(String[] args) throws StackException {  // Something is available in this main function, that throws a StackException.

@@ -1,4 +1,4 @@
-package Stacks_Queues_Theory_Problems.Stacks;
+package Stacks;
 
 public class CustomStack {
     protected int[] data;   //https://chat.openai.com/share/cd318471-1606-4556-8567-dcbd979e0db5

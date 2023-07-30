@@ -1,4 +1,4 @@
-package Stacks_Queues_Theory_Problems.Queues;
+package Queues;
 
 public class QueueMain{
     public static void main(String[] args) throws Exception{

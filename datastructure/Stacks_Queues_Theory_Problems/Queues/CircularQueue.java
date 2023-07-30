@@ -1,4 +1,4 @@
-package Stacks_Queues_Theory_Problems.Queues;
+package Queues;
 
 public class CircularQueue {
     protected static final int DEFAULT_SIZE = 10;

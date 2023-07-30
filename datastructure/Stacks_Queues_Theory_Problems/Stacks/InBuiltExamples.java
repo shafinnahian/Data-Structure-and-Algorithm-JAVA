@@ -1,4 +1,4 @@
-package Stacks_Queues_Theory_Problems.Stacks;
+package Stacks;
 
 import java.util.*;
 public class InBuiltExamples {
