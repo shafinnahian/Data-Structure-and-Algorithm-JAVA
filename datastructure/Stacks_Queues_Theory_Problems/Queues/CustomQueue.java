@@ -1,4 +1,4 @@
-package Queue;
+package Stacks_Queues_Theory_Problems.Queues;
 
 public class CustomQueue {
     protected static final int DEFAULT_SIZE = 10;

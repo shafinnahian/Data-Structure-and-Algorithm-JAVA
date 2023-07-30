@@ -1,4 +1,4 @@
-package Queue;
+package Stacks_Queues_Theory_Problems.Queues;
 
 public class DynamicQueue extends CircularQueue{
     public DynamicQueue(){
